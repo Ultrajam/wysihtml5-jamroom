@@ -30,6 +30,9 @@ function ujWysihtml5_meta() {
  * init
  */
 function ujWysihtml5_init() {
+
+    jrCore_register_module_feature('jrCore','quota_support','ujWysihtml5','off');
+
     // register the custom form field
     jrCore_register_module_feature('jrCore','form_field','ujWysihtml5','wysihtml5');
     return TRUE;
